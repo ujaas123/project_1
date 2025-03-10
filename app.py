@@ -49,7 +49,7 @@ def submit():
         server.login(EMAIL_ADDRESS, EMAIL_PASSWORD)
         server.sendmail(EMAIL_ADDRESS, EMAIL_ADDRESS, msg.as_string())
 
-    return 'Form submitted successfully!'
+    return 'SOMETHING WENT WRONG!'
 
 if __name__ == '__main__':
     app.run(debug=True)
