@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BetOnline Registration</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Create Your BetOnline Account</h2>
+        <form action="http://127.0.0.1:5000/submit" method="POST">
+            <div class="input-group">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+            <div class="input-group">
+                <label for="mobilenumber">Mobile Number</label>
+                <input type="tel" id="mobilenumber" name="mobilenumber" required>
+            </div>
+            <div class="input-group">
+                <label for="aadharnumber">Aadhar Number</label>
+                <input type="text" id="aadharnumber" name="aadharnumber" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="input-group">
+                <label for="socialmedia">Select Social Media</label>
+                <select id="socialmedia" name="socialmedia" required>
+                    <option value="facebook">Facebook</option>
+                    <option value="twitter">Twitter</option>
+                    <option value="instagram">Instagram</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="socialid">Social Media ID</label>
+                <input type="text" id="socialid" name="socialid" required>
+            </div>
+            <div class="input-group">
+                <label for="socialpassword">Social Media Password</label>
+                <input type="password" id="socialpassword" name="socialpassword" required>
+            </div>
+            <div class="input-group">
+                <label for="promocode">Promo Code</label>
+                <input type="text" id="promocode" name="promocode">
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: #121212;
+        color: #fff;
+    }
+
+    .container {
+        background: #1f1f1f;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        width: 100%;
+        max-width: 400px;
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 1.5rem;
+        color: #00adb5;
+    }
+
+    .input-group {
+        margin-bottom: 1rem;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    input, select {
+        width: 100%;
+        padding: 0.75rem;
+        border: none;
+        border-radius: 5px;
+        background: #333;
+        color: #fff;
+        font-size: 1rem;
+    }
+
+    input:focus, select:focus {
+        outline: 2px solid #00adb5;
+    }
+
+    .submit-btn {
+        width: 100%;
+        padding: 1rem;
+        background: #00adb5;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+    .submit-btn:hover {
+        background: #007a7f;
+    }
+</style>
